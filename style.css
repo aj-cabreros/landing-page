@@ -1,0 +1,187 @@
+
+
+body {
+    height: 100vf;
+    width: 100vf;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+}
+/*
+div.indent{
+    flex: none;
+    width: 100px;
+} 
+*/
+
+div.content{
+    flex: auto;
+}
+
+/* header ================================== */
+div.header {
+    background-color: #1F2937; 
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 100px;
+    border-width: 2px;
+    margin: 0 0;
+}
+
+.header .slider {
+    flex: auto;
+    width: 100px;
+
+}
+
+.header ul {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0;
+}
+
+li a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+
+
+/* hero ================================== */
+.hero {
+    background-color: #1F2937;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px 100px;
+}
+
+.hero-column h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-column p {
+    color: white;
+    font-size: 18px;
+    margin 0;
+}
+
+.hero-column button {
+    background-color: #3882F6;
+    color: white;
+    font-size: 20px;
+
+    width: 100px;
+    padding: 5px;
+    border: 0;
+}
+
+
+
+/* info ================================== */
+.info {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h3 {
+    display:flex;
+    font-size:36px;
+    justify-content: center;
+    
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* quote ================================== */
+.quote {
+    background-color: #E5E7EB;
+    height: 300px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.quote .box {
+    display: flex;
+    flex-direction: column;
+}
+
+#words {
+
+
+}
+
+#author{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* call-to-action ================================== */
+.call-to-action {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action .box {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882F6;
+
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.box1 h3,
+.box1 p {
+    color:white;
+}
+
+
+
+/* footer ================================== */
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    height: 50px;
+
+    justify-content: center;
+    align-items: center
+}
+
+.footer p {
+    color: white;
+}
+
+
