@@ -166,6 +166,7 @@ li a{
 }
 
 .info h3 {
+    align-self: center;
     display:flex;
     color: #1F2937;
     font-size: 36px;
