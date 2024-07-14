@@ -2,21 +2,33 @@
 
 body {
     height: 100vf;
-    width: 100vf;
     background-color: white;
     margin: 0;
     padding: 0;
 
     display: flex;
 }
-/*
-div.indent{
-    flex: none;
-    width: 100px;
-} 
-*/
 
-div.content{
+/* Page indentation */
+
+.header,
+.footer {
+    padding: 0 150px;
+}
+
+
+.section {
+    box-sizing: border-box;
+    width: 100vf;
+
+    padding: 0px 150px;
+    margin: 0 0;
+}
+
+
+div.content {
+    display: flex;
+    flex-direction: column;
     flex: auto;
 }
 
@@ -27,11 +39,28 @@ div.header {
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 
-    padding: 0 100px;
-    border-width: 2px;
-    margin: 0 0;
+
+}
+
+.header .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo h3 {
+    color: #F9FAF8;
+    font-size: 24px;
+
 }
 
 .header .slider {
@@ -50,27 +79,31 @@ div.header {
     padding: 0;
 }
 
+
 li a{
-    color: white;
+    color: #E5E7EB;
     display: flex;
     text-decoration: none;
 }
 
 
+
+
 /* hero ================================== */
 .hero {
     background-color: #1F2937;
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hero-column {
     display: flex;
+    height: 266px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
-    padding: 50px 100px;
 }
 
 .hero-column h1 {
@@ -82,7 +115,7 @@ li a{
 .hero-column p {
     color: white;
     font-size: 18px;
-    margin 0;
+    margin: 0;
 }
 
 .hero-column button {
@@ -90,39 +123,66 @@ li a{
     color: white;
     font-size: 20px;
 
-    width: 100px;
+    width: 150px;
     padding: 5px;
     border: 0;
+    border-radius: 10px;;
 }
 
+.hero .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.box img {
+    width: 400px;
+    height: auto;
+}
 
 /* info ================================== */
 .info {
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
 .info h3 {
     display:flex;
-    font-size:36px;
-    justify-content: center;
-    
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
 }
 
 .card-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
 }
 
 
 /* quote ================================== */
 .quote {
     background-color: #E5E7EB;
-    height: 300px;
+    height: 400px;
     display: flex;
 
     align-items: center;
@@ -135,7 +195,10 @@ li a{
 }
 
 #words {
-
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
 
 }
 
@@ -147,25 +210,43 @@ li a{
 
 /* call-to-action ================================== */
 .call-to-action {
-    height: 300px;
+    height: 400px;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.call-to-action .slider{
+    flex: auto;
 }
 
 .call-to-action .box {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     background-color: #3882F6;
 
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
-    padding: 20px;
+    gap: 10px;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+
+.box-button{
+    color: white;
+    background-color: #3882F6;
+    width: 100px;
+
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+
 }
 
 .box1 h3,
 .box1 p {
     color:white;
+    margin: 0;
 }
 
 
